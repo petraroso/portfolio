@@ -1,0 +1,126 @@
+.about {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.about__content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.about__title {
+  font-size: var(--size-2xl);
+  color: var(--clr-light);
+}
+.about__description {
+  max-width: 60ch;
+  font-size: var(--size-sm);
+  color: var(--clr-slate600);
+}
+.about__hr {
+  border-color: var(--clr-slate800);
+}
+.about__subtitle {
+  font-size: var(--size-sm);
+  color: var(--clr-slate800);
+}
+.about__ul-container {
+  display: flex;
+}
+.about__ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  list-style-type: "\1F44D";
+  padding: 1em;
+  flex: 1; /*Gives equal space to both columns*/
+}
+.about__ul li {
+  font-size: var(--size-sm);
+  color: var(--clr-slate600);
+}
+.about__ul li::before {
+  content: ""; /*Necessary for margin to work*/
+  margin-left: 0.5em;
+}
+
+/*xs screens*/
+@media (min-width: 475px) {
+  .about {
+    gap: 1.5rem;
+  }
+  .about__content {
+    gap: 1.5rem;
+  }
+  .about__title {
+    font-size: var(--size-3xl);
+  }
+  .about__description {
+    font-size: var(--size-base);
+  }
+  .about__subtitle {
+    font-size: var(--size-base);
+  }
+  .about__ul li {
+    font-size: var(--size-base);
+  }
+}
+
+/*small screens*/
+@media (min-width: 640px) {
+  .about__img-wrapper {
+    margin: 0 auto;
+  }
+  .about__img {
+    width: 28.6875rem; /*1rem=16px*/
+  }
+}
+
+/*medium screens*/
+/*@media (min-width: 768px) {}*/
+
+/*large screens*/
+@media (min-width: 1024px) {
+  .about {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .about__title {
+    font-size: var(--size-4xl);
+  }
+  .about__description {
+    font-size: var(--size-lg);
+  }
+  .about__subtitle {
+    font-size: var(--size-lg);
+  }
+  .about__ul li {
+    font-size: var(--size-lg);
+  }
+}
+
+/*xl screens*/
+@media (min-width: 1280px) {
+  .about__content {
+    gap: 2rem; /*similar to hero and other sections*/
+  }
+  .about__title {
+    font-size: var(--size-5xl);
+  }
+  .about__description {
+    font-size: var(--size-xl);
+  }
+  .about__subtitle {
+    font-size: var(--size-xl);
+  }
+  .about__ul li {
+    font-size: var(--size-xl);
+  }
+  .about__img {
+    width: 30.75rem; /*1rem=16px*/
+  }
+}
+
+/*xxl screens*/
+/*@media (min-width: 1536px) {}*/
