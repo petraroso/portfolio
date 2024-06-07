@@ -8,7 +8,7 @@
 
   background-color: var(--clr-dark);
 
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
   text-align: center;
