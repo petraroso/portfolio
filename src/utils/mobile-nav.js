@@ -23,5 +23,20 @@ const mobileNav = () => {
       document.body.style.overflowY = "auto";
     });
   });
+
+  const resizeObserver = new ResizeObserver((entries) => {
+    for (let entry of entries) {
+      if (
+        entry.target.style.display === "flex" &&
+        entry.contentRect.width > 640
+      ) {
+        entry.target.style.display = "none";
+        document.body.style.overflowY = "auto";
+        isMobileNavOpen = false;
+      }
+    }
+  });
+
+  resizeObserver.observe(mobileNav);
 };
 export default mobileNav;
