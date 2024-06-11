@@ -22,10 +22,7 @@
 /*@media (min-width: 475px) {}*/
 
 /*small screens*/
-/*@media (min-width: 640px) {}*/
-
-/*medium screens*/
-@media (min-width: 768px) {
+@media (min-width: 640px) {
   .header__menu {
     display: flex;
     align-items: center;
@@ -61,6 +58,9 @@
     display: none;
   }
 }
+
+/*medium screens*/
+/*@media (min-width: 768px){}*/
 
 /*large screens*/
 @media (min-width: 1024px) {
