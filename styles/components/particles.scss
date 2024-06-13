@@ -78,7 +78,7 @@ body {
         to {
           transform: translate3d(
             random(100) + vw,
-            $startPositionY + 100 + vh,
+            $startPositionY + 200 + vh,
             // Move to below the viewport
             0
           );
