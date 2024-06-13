@@ -31,7 +31,7 @@
   display: flex;
   flex-direction: column;
   gap: 1em;
-  list-style-type: "\1F44D";
+  list-style-type: circle;
   padding: 1em;
   flex: 1; /*Gives equal space to both columns*/
 }
