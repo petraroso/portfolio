@@ -8,6 +8,7 @@
   --clr-slate800: #1e293b;
   --clr-rose: #e11d48;
   --clr-indigo: #4f46e5;
+  --clr-particle: hsl(180, 100%, 80%);
 
   /*rose rgb(225,29,72)
   indigo rgb(79,70,229)*/
@@ -49,6 +50,7 @@ html {
   --clr-slate400: #1e293b;
   --clr-slate600: #1e293b;
   --clr-slate800: #1e293b;
+  --clr-particle: hsla(0, 0%, 80%, 0);
 }
 
 body {
