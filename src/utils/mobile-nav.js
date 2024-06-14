@@ -1,24 +1,26 @@
 const mobileNav = () => {
-  const headerButton = document.querySelector(".header__bars");
+  const headerButtons = document.querySelectorAll(".header__bars");
   const mobileNav = document.querySelector(".mobile-nav");
   const mobileLink = document.querySelectorAll(".mobile-nav__link");
 
   let isMobileNavOpen = false; //state
 
-  headerButton.addEventListener("click", () => {
-    isMobileNavOpen = !isMobileNavOpen;
-    if (isMobileNavOpen) {
-      mobileNav.style.display = "flex";
-      document.body.style.overflowY = "hidden";
-      document.body.style.position = "absolute";
-      document.body.style.top = "0";
-      document.body.style.bottom = "0";
-      document.body.style.left = "0";
-      document.body.style.right = "0";
-    } else {
-      mobileNav.style.display = "none";
-      document.body.style.overflowY = "auto";
-    }
+  headerButtons.forEach((headerButton) => {
+    headerButton.addEventListener("click", () => {
+      isMobileNavOpen = !isMobileNavOpen;
+      if (isMobileNavOpen) {
+        mobileNav.style.display = "flex";
+        document.body.style.overflowY = "hidden";
+        document.body.style.position = "absolute";
+        document.body.style.top = "0";
+        document.body.style.bottom = "0";
+        document.body.style.left = "0";
+        document.body.style.right = "0";
+      } else {
+        mobileNav.style.display = "none";
+        document.body.style.overflowY = "auto";
+      }
+    });
   });
 
   mobileLink.forEach((link) => {
