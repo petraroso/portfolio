@@ -26,7 +26,7 @@
 .mobile-nav__close {
   position: absolute;
   top: 2rem;
-  right: 1rem;
+  right: 8px;
 }
 
 .mobile-nav__menu {
@@ -66,8 +66,5 @@
 @media (min-width: 475px) {
   .mobile-nav__close-positioner {
     max-width: 475px;
-  }
-  .mobile-nav__close {
-    right: 0.5rem;
   }
 }
