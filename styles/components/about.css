@@ -43,6 +43,9 @@
   content: ""; /*Necessary for margin to work*/
   margin-left: 0.5em;
 }
+.about__img-wrapper {
+  display: none;
+}
 
 /*xs screens*/
 @media (min-width: 475px) {
@@ -67,14 +70,7 @@
 }
 
 /*small screens*/
-@media (min-width: 640px) {
-  .about__img-wrapper {
-    margin: 0 auto;
-  }
-  .about__img {
-    width: 28.6875rem; /*1rem=16px*/
-  }
-}
+/*@media (min-width: 640px) {}*/
 
 /*medium screens*/
 /*@media (min-width: 768px) {}*/
@@ -97,6 +93,13 @@
   }
   .about__ul li {
     font-size: var(--size-lg);
+  }
+  .about__img-wrapper {
+    display: block;
+    margin: 0 auto;
+  }
+  .about__img {
+    width: 28.6875rem; /*1rem=16px*/
   }
 }
 
